@@ -1,5 +1,15 @@
 import random
 
+"""
+Author: Rodden Bona
+Student ID: W0461260
+Course: PROG1700
+Respository
+Project: Python random number guessing game
+Programming: Language
+Version: 1.5
+"""
+
 print("Guess which number I am thinking about")
 print("You only have 10 tries to figure it out")
 invalid_attempts = 0
