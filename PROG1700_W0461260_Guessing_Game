@@ -11,6 +11,7 @@ Programming Language: Python 3
 Version: 1.5
 """
 
+#Asks for the user's name and proceeds to explain what the game is
 name = input("Good day there. What is your name?: ")
 print("Hello " + str(name) + ". Let's play a game!")
 print("Guess which number I am thinking about!")
