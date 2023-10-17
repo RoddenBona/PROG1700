@@ -5,7 +5,7 @@ import random
 Author: Rodden Bona
 Student ID: W0461260
 Course: PROG1700
-Respository
+Respository: https://github.com/RoddenBona/PROG1700
 Project: Python random number guessing game
 Programming: Language
 Version: 1.5
