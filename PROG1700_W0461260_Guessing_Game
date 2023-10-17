@@ -11,8 +11,10 @@ Programming Language: Python 3
 Version: 1.5
 """
 
-print("Guess which number I am thinking about")
-print("You only have 10 tries to figure it out")
+name = input("Good day there. What is your name?: ")
+print("Hello " + str(name) + ". Let's play a game!")
+print("Guess which number I am thinking about!")
+print("You only have 10 tries to figure it out!")
 #Variable for both the amount of guesses taken
 invalid_attempts = 0
 #Random number variable will choose a number between 1 and 10
