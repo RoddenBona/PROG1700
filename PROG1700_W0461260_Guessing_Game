@@ -1,6 +1,3 @@
-#Random function for the radnom number
-import random
-
 """
 Author: Rodden Bona
 Student ID: W0461260
@@ -10,6 +7,8 @@ Project: Python random number guessing game
 Programming Language: Python 3
 Version: 1.5
 """
+#Random function for the radnom number
+import random
 
 #Asks for the user's name and proceeds to explain what the game is
 name = input("Good day there. What is your name?: ")
