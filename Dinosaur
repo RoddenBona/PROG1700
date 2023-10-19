@@ -8,7 +8,7 @@ Programming language: Python 3
 Version 2.75
 """
 
-chkn = 20.00
+chkn = 20
 days = 0
 chkn_eat = 1.00
 
