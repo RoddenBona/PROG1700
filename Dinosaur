@@ -1,6 +1,6 @@
 chkn = 20
 days = 0
-chkn_eat = 0
+chkn_eat = 1
 chkn_ill = 0
 
 while chkn > 0:
@@ -9,7 +9,6 @@ while chkn > 0:
     if days == 7:
         print("The dinosaur was sick today. So he did not eat any chicken")
     else:
-        chkn_eat = 1
         chkn = chkn - chkn_eat
         print("The Dinosaur ate" + str(chkn_eat) + " percent of the chicken")
         chkn_eat = chkn_eat + (0.05*days)
