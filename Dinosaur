@@ -1,3 +1,13 @@
+"""
+Author: Rodden Bona
+Student ID: W0461260
+Course: PROG1700
+Respository: https://github.com/RoddenBona/PROG1700
+Project: Dinosaur Chicken Eating
+Programming language: Python 3
+Version 3
+"""
+
 chkn = 20
 days = 0
 chkn_eat = 1
