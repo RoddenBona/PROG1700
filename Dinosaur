@@ -8,10 +8,9 @@ Programming language: Python 3
 Version 2.75
 """
 
-chkn = 20
+chkn = 20.00
 days = 0
-chkn_eat = 1
-chkn_ill = 0
+chkn_eat = 1.00
 
 while chkn > 0:
     days = days + 1
