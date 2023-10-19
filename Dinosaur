@@ -5,7 +5,7 @@ chkn_ill = 0
 
 while chkn > 0:
     days = days + 1
-    print("On day " + str(days) + " There were" + str(chkn) + " pounds of chicken")
+    print("On day " + str(days) + " There were " + str(chkn) + " pounds of chicken")
     if days == 7:
         print("The dinosaur was sick today. So he did not eat any chicken")
     else:
