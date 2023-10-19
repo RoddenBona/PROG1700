@@ -35,6 +35,7 @@ while invalid_attempts <= 5:
                 #Incease the variable by one so if they get it first try, it doesn't say they did it in 0 guesses
                 invalid_attempts = invalid_attempts + 1
                 print("You guessed " + str(cpunumb) + " in " + str(invalid_attempts) + " attempts")
+                break
             else:
                 #If guess is too high. Increase attempts by 1 and tell user just that
                 if userchoice > cpunumb:
@@ -53,6 +54,6 @@ while invalid_attempts <= 5:
         print("You gotta enter a simple number!")
 else:
     #Game over message if user doesn't guess the number in 5 attempts
-    print("You're out of guesses. Too bad!")
+    print("You're out of guesses. Too bad!") 
 
     #Once user has used up their 5 guesses. The while loop will no longer loop. Ending the program
