@@ -10,8 +10,7 @@ while chkn > 0:
         print("The dinosaur was sick today. So he did not eat any chicken")
     else:
         chkn = chkn - chkn_eat
-        chkn = round(chkn, 2)
-        print("The Dinosaur ate" + str(chkn_eat) + " percent of the chicken")
+        print("The Dinosaur ate " + str(chkn_eat) + " percent of the chicken")
         chkn_eat = chkn_eat + (0.05*days)
 
 
