@@ -22,7 +22,7 @@ while chkn > 0:
     else:
         chkn = round(chkn - chkn_eat, 2)
         print("The Dinosaur ate " + str(chkn_eat) + " percent of the chicken")
-        chkn_eat = round(chkn_eat + 0.050, 3)
+        chkn_eat = round(chkn_eat + 0.05, 2)
 
 
 if chkn <= 0:
