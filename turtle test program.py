@@ -1,6 +1,9 @@
 import turtle
 #setting turtle screem
 
+score_one = 0
+score_two = 0
+
 wn = turtle.Screen()
 wn.title("Pong test")
 wn.bgcolor("black")
@@ -29,6 +32,14 @@ ball.color("white")
 ball.speed(0)
 ball.penup
 ball.goto(0,0)
+
+pen = turtle.Turtle()
+pen.speed(0)
+pen.shape("square")
+pen.color("white")
+pen.penup
+pen.goto(0,260)
+pen.write("Player One:{} Player Two {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
 
 while True:
     wn.update()
