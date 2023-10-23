@@ -32,11 +32,13 @@ while chkn > 0:
         chkn = round(chkn - chkn_eat, 2)
         #Another little message howing how much the Dino ate each day
         print("The Dinosaur ate " + str(chkn_eat) + " percent of the chicken")
-        #Increase the amount of chicken that will be eaten on the next day by 0.05, rounded to the
-        #nearest hundreth
-        chkn_eat = round(chkn_eat + 0.05, 2)
+        #Increase the amount of chicken that will be eaten on the next day by 0.05 times # of days
+        # rounded to the nearest hundreth
+        chkn_eat = round(1 + (0.05*days), 2)
+        
 
 #If there is no more chicken left. Display below message, and end the program as the loop is no
 #longer active
 if chkn <= 0:
     print("And now the chicken is all gone within " + str(days) + " days")
+
