@@ -35,7 +35,6 @@ ball.goto(0,0)
 
 pen = turtle.Turtle()
 pen.speed(0)
-pen.shape("square")
 pen.color("white")
 pen.penup
 pen.goto(0,260)
