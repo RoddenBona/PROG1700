@@ -41,4 +41,3 @@ while chkn > 0:
 #longer active
 if chkn <= 0:
     print("And now the chicken is all gone within " + str(days) + " days")
-
