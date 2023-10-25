@@ -30,17 +30,18 @@ ball = turtle.Turtle()
 ball.shape("square")
 ball.color("white")
 ball.speed(0)
-ball.penup
+ball.penup()
 ball.goto(0,0)
 
 Scoreboard = turtle.Turtle()
 Scoreboard.speed(0)
 Scoreboard.color("black")
-Scoreboard.penup
+Scoreboard.penup()
 Scoreboard.goto(0,260)
 Scoreboard.color("white")
-Scoreboard.write("Player One:{} Player Two {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
+Scoreboard.write("Player One:{} Player Two: {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
+Scoreboard.hideturtle()
 
-
-while True:
+play = True
+while play:
     wn.update()
