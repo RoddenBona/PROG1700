@@ -35,9 +35,10 @@ ball.goto(0,0)
 
 pen = turtle.Turtle()
 pen.speed(0)
-pen.color("white")
+pen.color("black")
 pen.penup
 pen.goto(0,260)
+pen.color("white")
 pen.write("Player One:{} Player Two {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
 
 while True:
