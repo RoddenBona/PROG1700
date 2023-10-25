@@ -33,14 +33,14 @@ ball.speed(0)
 ball.penup
 ball.goto(0,0)
 
-pen = turtle.Turtle()
-pen.speed(0)
-pen.color("black")
-pen.penup
-pen.goto(0,260)
-pen.color("white")
-pen.write("Player One:{} Player Two {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
-pen.hideturtle
+Scoreboard = turtle.Turtle()
+Scoreboard.speed(0)
+Scoreboard.color("black")
+Scoreboard.penup
+Scoreboard.goto(0,260)
+Scoreboard.color("white")
+Scoreboard.write("Player One:{} Player Two {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
+
 
 while True:
     wn.update()
