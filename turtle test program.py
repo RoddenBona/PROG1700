@@ -42,6 +42,21 @@ Scoreboard.color("white")
 Scoreboard.write("Player One:{} Player Two: {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
 Scoreboard.hideturtle()
 
+def paddle_one_up():
+    y = paddle_one.ycor()
+    y += 20
+    paddle_one.sety(y)
+
+def paddle_one_down():
+    y = paddle_one.ycor()
+    y -= 20
+    paddle_two.sety(y)
+
+wn.listen()
+wn.onkeypress(paddle_one_up, "w")
+wn.onkeypress(paddle_one_down, "s")
+
 play = True
 while play:
     wn.update()
+
