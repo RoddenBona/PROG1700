@@ -50,7 +50,7 @@ def paddle_one_up():
 def paddle_one_down():
     y = paddle_one.ycor()
     y -= 20
-    paddle_two.sety(y)
+    paddle_one.sety(y)
 
 wn.listen()
 wn.onkeypress(paddle_one_up, "w")
