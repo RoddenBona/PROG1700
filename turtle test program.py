@@ -67,7 +67,7 @@ wn.onkeypress(paddle_one_up, "w")
 wn.onkeypress(paddle_one_down, "s")
 wn.onkeypress(paddle_two_up, "o")
 wn.onkeypress(paddle_two_down, "k")
+
 play = True
 while play:
     wn.update()
-
