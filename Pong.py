@@ -15,7 +15,7 @@ wn.tracer(0)
 #player one's paddle
 paddle_one = turtle.Turtle()
 paddle_one.shape("square")
-paddle_one.color("white")
+paddle_one.color("yellow")
 paddle_one.speed(0)
 paddle_one.shapesize(stretch_wid=5,stretch_len=1)
 paddle_one.penup()
@@ -24,7 +24,7 @@ paddle_one.goto(-350,0)
 #player two's paddle
 paddle_two = turtle.Turtle()
 paddle_two.shape("square")
-paddle_two.color("white")
+paddle_two.color("purple")
 paddle_two.speed(0)
 paddle_two.shapesize(stretch_wid=5,stretch_len=1)
 paddle_two.penup()
@@ -32,13 +32,13 @@ paddle_two.goto(350,0)
 
 #Ball drawing and movement
 ball = turtle.Turtle()
-ball.shape("square")
-ball.color("white")
+ball.shape("circle")
+ball.color("red")
 ball.speed(0)
 ball.penup()
 ball.goto(0,0)
-ball.dx = 0.05
-ball.dy = 0.05
+ball.dx = -0.05
+ball.dy = -0.05
 
 #draw the scoreboard
 Scoreboard = turtle.Turtle()
@@ -95,11 +95,22 @@ while play:
         ball.dy = ball.dy * -1
     
     #Check left and right borders
-    if ball.xcor() > 400:
+    if ball.xcor() > 390:
+        #score_one = score_one + 1 also would work here as well
         score_one =+ 1
         Scoreboard.clear()
         Scoreboard.write("Player One:{} Player Two: {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
-    elif ball.xcor() < -400:
+        ball.goto(0,0)
+    elif ball.xcor() < -390:
         score_two =+ 1
         Scoreboard.clear()
         Scoreboard.write("Player One:{} Player Two: {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
+        ball.goto(0,0)
+
+#paddle and ball collision
+    if ball.xcor() < -340 and ball.ycor() < paddle_one.ycor() + 50 and ball.ycor() > paddle_one.ycor() - 50:
+        ball.setx(-340)
+        ball.dx = ball.dx * -1
+    elif ball.xcor() > 340 and ball.ycor() < paddle_two.ycor() + 50 and ball.ycor() > paddle_two.ycor() - 50:
+        ball.setx(340)
+        ball.dx = ball.dx * -1
