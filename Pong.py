@@ -8,7 +8,7 @@ wn = turtle.Screen()
 wn.title("Pong test")
 wn.bgcolor("black")
 wn.setup(width=800, height=600)
-wn.tracer()
+wn.tracer(0)
 
 paddle_one = turtle.Turtle()
 paddle_one.shape("square")
@@ -71,3 +71,4 @@ wn.onkeypress(paddle_two_down, "k")
 play = True
 while play:
     wn.update()
+
