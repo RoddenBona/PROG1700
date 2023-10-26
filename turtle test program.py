@@ -52,10 +52,21 @@ def paddle_one_down():
     y -= 20
     paddle_one.sety(y)
 
+def paddle_two_up():
+    y = paddle_two.ycor()
+    y += 20
+    paddle_two.sety(y)
+
+def paddle_two_down():
+    y = paddle_two.ycor()
+    y -= 20
+    paddle_two.sety(y)
+
 wn.listen()
 wn.onkeypress(paddle_one_up, "w")
 wn.onkeypress(paddle_one_down, "s")
-
+wn.onkeypress(paddle_two_up, "o")
+wn.onkeypress(paddle_two_down, "k")
 play = True
 while play:
     wn.update()
