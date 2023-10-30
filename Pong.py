@@ -116,4 +116,5 @@ while play:
     if score_one >= 10 or score_two >= 10:
         print("We have a winner!")
         play = False
-
+    else:
+        print("Error! This message should never appear!")
