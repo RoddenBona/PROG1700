@@ -35,8 +35,8 @@ ball.color("red")
 ball.speed(0)
 ball.penup()
 ball.goto(0,0)
-ball.dx = -0.5
-ball.dy = -0.5
+ball.dx = -0.1
+ball.dy = -0.1
 
 #draw the scoreboard
 Scoreboard = turtle.Turtle()
