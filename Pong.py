@@ -1,6 +1,4 @@
 import turtle
-#setting turtle screem
-
 #player scores
 score_one = 0
 score_two = 0
@@ -97,12 +95,12 @@ while play:
     #Check left and right borders
     if ball.xcor() > 390:
         #score_one = score_one + 1 also would work here as well
-        score_one =+ 1
+        score_one = score_one + 1
         Scoreboard.clear()
         Scoreboard.write("Player One:{} Player Two: {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
         ball.goto(0,0)
     elif ball.xcor() < -390:
-        score_two =+ 1
+        score_two = score_two + 1
         Scoreboard.clear()
         Scoreboard.write("Player One:{} Player Two: {}".format(score_one, score_two), align="center", font=("Courier", 24, "normal"))
         ball.goto(0,0)
@@ -114,3 +112,8 @@ while play:
     elif ball.xcor() > 340 and ball.ycor() < paddle_two.ycor() + 50 and ball.ycor() > paddle_two.ycor() - 50:
         ball.setx(340)
         ball.dx = ball.dx * -1
+
+    if score_one >= 10 or score_two >= 10:
+        print("We have a winner!")
+        play = False
+
