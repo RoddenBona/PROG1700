@@ -35,8 +35,8 @@ ball.color("red")
 ball.speed(0)
 ball.penup()
 ball.goto(0,0)
-ball.dx = -0.05
-ball.dy = -0.05
+ball.dx = -0.5
+ball.dy = -0.5
 
 #draw the scoreboard
 Scoreboard = turtle.Turtle()
@@ -78,6 +78,8 @@ wn.onkeypress(paddle_two_up, "Up")
 wn.onkeypress(paddle_two_down, "Down")
 
 #main
+
+#Movemonet of the ball during gameplay
 play = True
 while play:
     wn.update()
@@ -116,5 +118,3 @@ while play:
     if score_one >= 10 or score_two >= 10:
         print("We have a winner!")
         play = False
-    else:
-        print("Error! This message should never appear!")
