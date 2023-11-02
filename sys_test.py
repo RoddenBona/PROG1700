@@ -64,6 +64,6 @@ myDic = {'favFood':'Pizza',
          'favPlanets':{'name':'mars', 'moons':2}
          }
 
-print(myDic['faveBands'])
+print(myDic['favBands'])
 print(myDic['favMovie'])
 print(myDic['favPLanets']["name"])
