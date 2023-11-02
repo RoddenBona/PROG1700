@@ -51,4 +51,4 @@ print(planet["name"], "has", planet["moons"], "moons")
 
 #vs
 
-print(str(planet.get["name"]), + "has", + (planet.get["moons"], + "moons"))
+print(str(planet.get["name"]) + "has" + (planet.get["moons"] + "moons"))
