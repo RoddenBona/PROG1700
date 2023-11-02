@@ -55,3 +55,15 @@ name = "Rodden"
 age = 7
 
 print(f'{name} is {age + 13} years old')
+
+myDic = {'favFood':'Pizza',
+         'bestSport':'Hockey',
+         'favMovie':'Jim Carreys Grinch',
+         'coolestnumbers':(8,64,128),
+         'favBands':['Marianas Trench','Tally Hall','Red Vox'],
+         'favPlanets':{'name':'mars', 'moons':2}
+         }
+
+print(myDic['faveBands'])
+print(myDic['favMovie'])
+print(myDic['favPLanets']["name"])
