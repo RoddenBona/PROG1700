@@ -61,8 +61,10 @@ myDic = {'favFood':'Pizza',
          'favMovie':'Jim Carreys Grinch',
          'coolestnumbers':(8,64,128),
          'favBands':['Marianas Trench','Tally Hall','Red Vox'],
-         'favPlanets':{'name':'mars', 'moons':2}
+         'favPlanets':{'name':'mars',
+                        'moons':2}
          }
 
 print(myDic['favBands'])
 print(myDic['favMovie'])
+print(myDic['favPlanets']['name'])
