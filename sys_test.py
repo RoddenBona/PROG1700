@@ -38,3 +38,17 @@ print(planet)
 print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
 
 print(planet)
+
+
+# Enter code below
+planet = { 
+    'name': 'Mars',
+    'moons': 2
+}
+
+#old print format
+print(planet["name"], "has", planet["moons"], "moons")
+
+#vs
+
+print(str(planet.get["name"]), + "has", + (planet.get["moons"], + "moons"))
