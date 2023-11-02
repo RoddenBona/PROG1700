@@ -51,7 +51,7 @@ print(planet["name"], "has", planet["moons"], "moons")
 
 # f string
 
-name = Rodden
+name = "Rodden"
 age = 7
 
 print(f'{name} is {age + 13} years old')
