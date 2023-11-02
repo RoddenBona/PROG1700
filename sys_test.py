@@ -27,3 +27,14 @@ print(planet)
 planet.pop('orbital period')
 
 print(planet)
+
+planet['diameter (km)'] = {
+    'polar': 133709,
+    'equatorial': 142984
+}
+
+print(planet)
+
+print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
+
+print(planet)
