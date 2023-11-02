@@ -1,5 +1,29 @@
-parsecs_input = input("Input number of parsecs:")
-parsecs = int(parsecs_input)
-lightyears = 3.26156 * parsecs
+planet = {
+    'name': 'Earth',
+    'moons': 1
+}
 
-print(parsecs_input + " parsecs is " + str(lightyears) + " lightyears")
+print(planet)
+
+print(planet.get('name'))
+
+planet.update({
+    'name': 'Jupiter',
+    'moons': 79
+})
+
+print(planet)
+
+planet['orbital period'] = 4333
+
+# planet dictionary now contains: {
+#   name: 'jupiter'
+#   moons: 79
+#   orbital period: 4333
+# }
+
+print(planet)
+
+planet.pop('orbital period')
+
+print(planet)
