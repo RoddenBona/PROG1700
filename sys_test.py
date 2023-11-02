@@ -49,3 +49,8 @@ planet = {
 #old print format
 print(planet["name"], "has", planet["moons"], "moons")
 
+# f string
+
+name = 7
+
+print(f'{name} is {age + 13} years old')
