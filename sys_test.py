@@ -59,7 +59,7 @@ print(f'{name} is {age + 13} years old')
 myDic = {'favFood':'Pizza',
          'bestSport':'Hockey',
          'favMovie':'Jim Carreys Grinch',
-         'favNumbers':(8,64,128),
+         'favNuzmbers':(8,64,128),
          'favBands':['Marianas Trench','Tally Hall','Red Vox'],
          'favPlanets':{'name':'mars',
                         'moons':2}
