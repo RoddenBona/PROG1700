@@ -58,7 +58,6 @@ print(items)
 
 print(major)
 
-
 #iterating through dictionaries
 #You can loop through a dictionary to process keys and values
 
@@ -78,10 +77,11 @@ for key, value in student.items():
     print(f'{key}: {value}')
 
 
+
+
+
 #irl example
-
 # Creating a library catalog using dictionaries 
-
 library_catalog = { 
 
     '978-0134863709': 'Python Crash Course', 
@@ -92,19 +92,9 @@ library_catalog = {
 
 } 
 
- 
-
- 
-
-# Accessing and modifying the catalog 
-
 library_catalog['978-1449369415'] = 'Learning Python' 
 
 del library_catalog['978-1491946008'] 
-
- 
-
-# Iterating through the catalog 
 
 print("Library Catalog:") 
 
@@ -112,10 +102,7 @@ for isbn, title in library_catalog.items():
 
     print(f"ISBN: {isbn}, Title: {title}") 
  
-
 #In this lesson, you've learned about Python dictionaries, how to create and manipulate them, 
 # and some useful methods. Dictionaries are a powerful tool for organizing and accessing data in 
 # Python. Practice working with dictionaries to become proficient in their use, as they are essential 
-# for many real-world applications. 
-
- 
+# for many real-world applications.  
