@@ -92,10 +92,13 @@ library_catalog = {
 
 } 
 
+# Accessing and modifying the catalog 
 library_catalog['978-1449369415'] = 'Learning Python' 
 
 del library_catalog['978-1491946008'] 
 
+
+# Iterating through the catalog 
 print("Library Catalog:") 
 
 for isbn, title in library_catalog.items(): 
@@ -106,3 +109,15 @@ for isbn, title in library_catalog.items():
 # and some useful methods. Dictionaries are a powerful tool for organizing and accessing data in 
 # Python. Practice working with dictionaries to become proficient in their use, as they are essential 
 # for many real-world applications.  
+
+
+#You don't always have to treat things in the dictionary as key and item all the time
+#since keys and items are all really just two or more items that are related in a variable
+
+#creating reading updaating deleting (crud)
+#A little acronym of things you should know about working with any kind of data structure
+# I wish this had a better name though
+
+
+
+#Class exercise
