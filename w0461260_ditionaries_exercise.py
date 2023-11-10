@@ -50,3 +50,4 @@ while True:
 
 #7.Remove a student and prompt to add a new entry
 
+#Calculate an d print the highest score
