@@ -39,18 +39,37 @@ average = sum_scores/number_students
 print(average)
 
 #5. Promp to type in a student's name. display their score
-
-while True:
-    option = input("Select a student: ")
-    option = str(option)
-    if option in student_score:
-        print("You have selected " + option + " and their score is: " )
-        print(student_score[str(option)])
-    else:
-        print("Student not found please try again")
-
 #6. prompt the user of they wish to update their score
-
 #7.Remove a student and prompt to add a new entry
-
 #Calculate an d print the highest score
+while True:
+    choice = input("""(1)Select an existing student
+    (2)Add a new student
+    (3)Exit and see the highest score
+    Enter option here: """)
+    if choice.isdigit():
+        choice = int(choice)
+        if choice == 1:
+            option = input("Enter a student name: ")
+            option = str(option)
+            if option in student_score:
+                print("You have selected " + option + " and their score is: " )
+                print(student_score[str(option)])
+                print()
+                deletion = input("""Would you like to:
+                (1)Update score
+                (2)Delete Entry
+                (3)Exit
+                Enter option here""")
+            else:
+                print("Student not found please try again")
+        else:
+            if choice == 2:
+                addition = input("Enter a new student name: ")
+                addition = str(addition)
+                new_score = input("Enter a score for the student")
+                if new_score.isdigit():
+                    new_score = int(new_score)
+                    student_score[str(addition)] = new_score
+                    print("Student has been added")
+
