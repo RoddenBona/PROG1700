@@ -21,5 +21,5 @@ student_score = {
 }
 
 #This should allow us to print just the names as they are set to be the key variables to the scores
-for ISBN in student_score:
+for isbn in student_score:
     print(f"Student: {isbn}, Score: {title}")
