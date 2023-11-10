@@ -41,10 +41,13 @@ print(average)
 #5. Promp to type in a student's name. display their score
 
 while True:
-    option = input("Select a student")
+    option = input("Select a student: ")
     option = str(option)
     if option in student_score:
-        print('test')
+        print("You have selected " + option + " and their score is: " )
+        print(student_score[str(option)])
+    else:
+        print("Student not found please try again")
 
 #6. prompt the user of they wish to update their score
 
