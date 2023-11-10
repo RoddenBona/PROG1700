@@ -11,15 +11,41 @@ Version
 #Create a script that how to work with dictionaries using several various operations 
 #using at least 5 student names
 
-#first well define and add some information into the dictionary
+#1 and 2. Create a table named student_score and add some names with their scores
 student_score = {
-    "Kris":79,
-    "Bobby":85,
+    "Kris":70,
+    "Bobby":90,
     "Noelle":95,
     "Ralph": 80,
-    "Susie":70
+    "Susie":50
 }
 
-#This should allow us to print just the names as they are set to be the key variables to the scores
-for isbn in student_score:
-    print(f"Student: {isbn}, Score: {title}")
+#3.Print the student names
+for key, value in student_score.items(): 
+    print(f'{key}: {value}')
+
+#4.Print the average scores
+
+#create a sum of the values in the dictionary
+sum_scores = sum(student_score.values())
+print(sum_scores)
+
+#then a value for how many key items there are (in this context. how many students)
+number_students = len(student_score)
+print(number_students)
+
+#Now average them out
+average = sum_scores/number_students
+print(average)
+
+#5. Promp to type in a student's name. display their score
+
+while True:
+    option = input("Select a student")
+    if option in student_score:
+        print('test')
+
+#6. prompt the user of they wish to update their score
+
+#7.Remove a student and prompt to add a new entry
+
