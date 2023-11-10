@@ -42,6 +42,7 @@ print(average)
 
 while True:
     option = input("Select a student")
+    option = str(option)
     if option in student_score:
         print('test')
 
