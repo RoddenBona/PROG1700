@@ -93,6 +93,8 @@ while True:
                     new_score = int(new_score)
                     student_score[str(addition)] = new_score
                     print("Student has been added")
+                else:
+                    print("Invalid entry")
             else:
                 if choice == 3:
                     for key, value in student_score.items(): 
