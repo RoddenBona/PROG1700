@@ -39,7 +39,7 @@ highest = max(student_score.values())
 #5.Prompt to type in a student's name. display their score
 #6.Prompt the user of they wish to update their score
 #7.Remove a student and prompt to add a new entry
-#Calculate and print the highest score in the dictionary
+#8.Calculate and print the highest score in the dictionary
 
 #Everything will be contained in a while loop. Bringing you back to the first select screen upon completing
 #One of the options
@@ -55,7 +55,7 @@ while True:
     #Turn users choice into intiger to determine which option to go to and execute
     if choice.isdigit():
         choice = int(choice)
-        #option 1 is the view and alter pre-existing entries
+        #Excercise 5 is the view a pre-existing entry
         if choice == 1:
             #Search for exing entries in the dictionary and convert input into a string
             option = input("Enter a student name: ")
@@ -74,7 +74,7 @@ while True:
                 #Convert option to int
                 if deletion.isdigit():
                     deletion = int(deletion)
-                    #option 1. update the score
+                    #option 1 and exercise 6. update the score
                     if deletion == 1:
                         updated = input("Enter updated score: ")
                         #Convert score to int and update student's score to input
@@ -90,7 +90,7 @@ while True:
                             del student_score[str(option)]
                             print("Student entry has been deleted")
                             print('\n',)
-                        #option 3 just exits back to main menu
+                        #option 3 and exercise 7(part one) just exits back to main menu
                         else:
                             if deletion == 3:
                                 print("exit")
@@ -101,7 +101,7 @@ while True:
                     print("Invalid entry")
             else: #Error if input does not match with an existing student
                 print("Student not found please try again")
-        #Adding a new entry to the dictionary
+        #Excercise 7(part two) Adding a new entry to the dictionary
         else:
             if choice == 2:
                 #Prompt user to input name for the new entry
@@ -120,7 +120,7 @@ while True:
                 #error if new score is not int
                 else:
                     print("Invalid entry")
-            #Viewing all current students and their scores
+            #Excerise 3, 4 and 8 Viewing all current students and their scores with the average and highest score
             else:
                 if choice == 3:
                     #Using f strings and for loops. This will print all students with their scores in a neat fashion
