@@ -38,6 +38,9 @@ print(number_students)
 average = sum_scores/number_students
 print(average)
 
+highest = max(student_score.values())
+print(highest)
+
 #5. Promp to type in a student's name. display their score
 #6. prompt the user of they wish to update their score
 #7.Remove a student and prompt to add a new entry
@@ -45,7 +48,8 @@ print(average)
 while True:
     choice = input("""(1)Select an existing student
     (2)Add a new student
-    (3)Exit and see the highest score
+    (3)Print all current scores
+    (4)Exit
     Enter option here: """)
     if choice.isdigit():
         choice = int(choice)
@@ -61,15 +65,45 @@ while True:
                 (2)Delete Entry
                 (3)Exit
                 Enter option here""")
+                if deletion.isdigit():
+                    deletion = int(deletion)
+                    if deletion == 1:
+                        updated = input("Enter updated score: ")
+                        if updated.isdigit():
+                            updated = int(updated)
+                            student_score[str(option)] = updated
+                    else:
+                        if deletion == 2:
+                            del student_score[str(option)]
+                        else:
+                            if deletion == 3:
+                                print("exit")
+                            else:
+                                print("Invalid entry")
+                else:
+                    print("Invalid entry")
             else:
                 print("Student not found please try again")
         else:
             if choice == 2:
                 addition = input("Enter a new student name: ")
                 addition = str(addition)
-                new_score = input("Enter a score for the student")
+                new_score = input("Enter a score for the student: ")
                 if new_score.isdigit():
                     new_score = int(new_score)
                     student_score[str(addition)] = new_score
                     print("Student has been added")
+            else:
+                if choice == 3:
+                    for key, value in student_score.items(): 
+                        print(f'{key}: {value}')
+                        print("Average: " + str(average))
+                        print("The highest score in the class is " + str(highest))
+                else:
+                    if choice == 4:
+                        break
+                    else:
+                        print("invalid entry")
+    else:
+        print("invalid entry")
 
