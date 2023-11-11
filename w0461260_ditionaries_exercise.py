@@ -121,15 +121,20 @@ while True:
             #Viewing all current students and their scores
             else:
                 if choice == 3:
-                    #
+                    #Using f strings and for loops. This will print all students with their scores in a neat fashion
                     for key, value in student_score.items(): 
                         print(f'{key}: {value}')
+                        #followed by the class average
                         print("Average: " + str(average))
+                        #and what the highest score in the dictionary is
                         print("The highest score in the class is " + str(highest))
+                #The final option of the main menu is just to break the loop. ending the program
                 else:
                     if choice == 4:
                         break
+                    #error if inputed option is 5 or higher
                     else:
                         print("invalid entry")
+    #error message for options that aren't int
     else:
         print("invalid entry")
