@@ -20,10 +20,6 @@ student_score = {
     "Susie":50
 }
 
-#3.Print the student names
-for key, value in student_score.items(): 
-    print(f'{key}: {value}')
-
 #create a sum of the values in the dictionary
 sum_scores = sum(student_score.values())
 #then a value for how many key items there are (in this context. how many students)
@@ -85,15 +81,20 @@ while True:
                         if updated.isdigit():
                             updated = int(updated)
                             student_score[str(option)] = updated
+                            print("Score has been updated")
+                            print('\n',)
                     #option 2. deletion
                     else:
                         if deletion == 2:
                             #simply remove student entry from dictionary and return to main menu
                             del student_score[str(option)]
+                            print("Student entry has been deleted")
+                            print('\n',)
                         #option 3 just exits back to main menu
                         else:
                             if deletion == 3:
                                 print("exit")
+                                print('\n',)
                             else: # error message if choice is 4 or higher
                                 print("Invalid entry")
                 else: #error message if choice is not an int
@@ -115,6 +116,7 @@ while True:
                     #Add the new student entry to the dictionary and boot back to main menu
                     student_score[str(addition)] = new_score
                     print("Student has been added")
+                    print('\n',)
                 #error if new score is not int
                 else:
                     print("Invalid entry")
@@ -124,11 +126,12 @@ while True:
                     #Using f strings and for loops. This will print all students with their scores in a neat fashion
                     for key, value in student_score.items(): 
                         print(f'{key}: {value}')
-                        #followed by the class average
-                        print("Average: " + str(average))
-                        #and what the highest score in the dictionary is
-                        print("The highest score in the class is " + str(highest))
+                     #followed by the class average
+                    print("Average: " + str(average))
+                    #and what the highest score in the dictionary is
+                    print("The highest score in the class is " + str(highest))
                 #The final option of the main menu is just to break the loop. ending the program
+                    print('\n',)
                 else:
                     if choice == 4:
                         break
