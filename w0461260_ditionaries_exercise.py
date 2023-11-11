@@ -70,7 +70,7 @@ while True:
                 (1)Update score
                 (2)Delete Entry
                 (3)Exit
-                Enter option here""")
+                Enter option here: """)
                 #Convert option to int
                 if deletion.isdigit():
                     deletion = int(deletion)
