@@ -26,7 +26,7 @@ sum_scores = sum(student_score.values())
 number_students = len(student_score)
 #Now average them out
 average = sum_scores/number_students
-#Grab the highest
+#Grab the highest value
 highest = max(student_score.values())
 
 
