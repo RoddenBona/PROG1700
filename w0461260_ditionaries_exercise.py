@@ -5,7 +5,7 @@ Course: PROG1700
 Respository: https://github.com/RoddenBona/PROG1700
 Project: Dictionary Excercies
 Programming language: Python 3
-Version 4
+Version 2
 """
 
 #Create a script that how to work with dictionaries using several various operations 
