@@ -56,15 +56,15 @@ print("concatenated list: ", new_list)
 repeated_list = my_list * 2
 print("repeating list: ",repeated_list)
 
-
 #common methods of lists
 
 #   .append adds an element to the end of the list
 my_list.append(5)
-print("list after appending: ", my_list)
+print("list after appending 5: ", my_list)
 
 count_of_five = my_list.count(5)
 print("print of 5 in the list: ", count_of_five)
 
 index_of_three = my_list.index(6)
 print("Index of the value 6 in the list: ", index_of_three)
+
