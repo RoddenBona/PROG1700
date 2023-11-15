@@ -66,5 +66,5 @@ print("list after appending: ", my_list)
 count_of_five = my_list.count(5)
 print("print of 5 in the list: ", count_of_five)
 
-index_of_three = my_list.index(10)
-print("Index of the value 10 in the list: ", index_of_three)
+index_of_three = my_list.index(6)
+print("Index of the value 6 in the list: ", index_of_three)
