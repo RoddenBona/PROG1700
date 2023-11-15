@@ -134,6 +134,7 @@ while True:
                     print('\n',)
                 else:
                     if choice == 4:
+                        print("Exiting Program. Thank you for your time")
                         break
                     #error if inputed option is 5 or higher
                     else:
