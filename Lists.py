@@ -76,5 +76,12 @@ for student in student_names:
     print(f"Hello, {student}!")
 
 number_of_students = len(student_names)
-print(number_of_students)
+print("the number of students greeted is",number_of_students)
 
+count = 0
+for students in student_names:
+    count += 1
+    print(f"Hello, {student}")
+    print(count)
+
+print("Counted",count,"students")
