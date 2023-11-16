@@ -68,3 +68,13 @@ print("print of 5 in the list: ", count_of_five)
 index_of_three = my_list.index(6)
 print("Index of the value 6 in the list: ", index_of_three)
 
+#iteration
+student_names = ["Mark", "Bob", "Wade", "Jack"]
+
+print("greeting for students")
+for student in student_names:
+    print(f"Hello, {student}!")
+
+number_of_students = len(student_names)
+print(number_of_students)
+
