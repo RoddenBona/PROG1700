@@ -1,3 +1,12 @@
+"""
+Author: Rodden bona
+Id: w0461260
+Project: Python List exercise: Programmming language quiz
+Programming language: Python 3
+Version 1
+Date made: Nov 16 2023
+"""
+
 import random
 #1.) 2.) 3.)Create lists for programming lanuages and difficulty levels
 programming_languages = ["Python","Javascript","C++","Ruby","Java"]
