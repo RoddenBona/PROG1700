@@ -37,10 +37,25 @@ def customer_addition():
                     main_menu()
                 else:
                     print("invalid entry. Please enter option as a number")
+        else:
+            print("Invalid entry. Please enter a number")
 
 def order_placement(customerID, product_name, quantity, unit_price):
-    print("test")
-    main_menu()
+    while True:
+        order_choice = input("""Would you like to place a new order for this customer?""")
+        if order_choice.isdigit():
+            order_choice = int(order_choice)
+            if order_choice == 1:
+                print("test")
+                main_menu()
+            else:
+                if order_choice == 2:
+                    print("Exiting to main menu")
+                    main_menu()
+                else:
+                    print("Invalid entry. Option not in list")
+        else:
+            print("Invalid entry. Please enter a number")
 
 def report_one(customerID):
     while True:
@@ -51,7 +66,7 @@ def report_one(customerID):
         if report_option.isdigit():
             report_option = int(report_option)
             if report_option == 1:
-                print("test. You inputed", report_option)
+                print("test. You inputed", customerID)
                 main_menu()
             else:
                 if report_option == 2:
@@ -60,7 +75,7 @@ def report_one(customerID):
                 else:
                     print("Invalid entry. Option not in list")
         else:
-            print("invalid entry please input a number")
+            print("invalid entry. Please input a number")
 
 def report_all():
     while True:
@@ -72,6 +87,7 @@ def report_all():
             report_choice = int(report_choice)
             if report_choice == 1:
                     print(customers)
+                    main_menu()
             else:
                 if report_choice == 2:
                     print("Exiting to main menu")
@@ -102,7 +118,7 @@ def main_menu():
                         customer_search = input("Enter CustomerID")
                         if customer_search in customers:
                             customerID = customer_search
-                        report_one(customerID)
+                            report_one(customerID)
                     else:
                         if menu_choice == 4:
                             report_all()
