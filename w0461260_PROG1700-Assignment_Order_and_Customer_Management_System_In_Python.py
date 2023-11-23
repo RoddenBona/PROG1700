@@ -5,14 +5,16 @@ Course: PROG1700
 Assignment: Order and Customer Management System
 Module: Data Structures
 Approach: Procedural Programming with Functions
-Last Updated By: Boudreau,Davis
 Language: Python 3
+Created: Nov 22 2023
+Last edited Nov 22 2023
 """
 
-customers = {1: {"name": "Alice", "contact": "123-456-7890", "orders": []},
+customers = {1: {"name": "Alice", "contact": "123-456-7890", "orders": ["hey","this is","a test"]},
             2: {"name": "Bob", "contact": "987-654-3210", "orders": []},
             }
 
+number_of_entries = len(customers)
 
 def customer_addition():
     while True:
@@ -24,10 +26,9 @@ def customer_addition():
             add_option = int(add_option)
             if add_option == 1:
                 add_fname = input("Enter new customer first name: ")
-                add_lname = input("Enter new customer last name: ")
                 add_contact = input("Enter new cusomter contact number: ")
-                print("test. current entries")
-                print(add_fname,add_lname,add_contact)
+                new_id = number_of_entries + 1
+                customers[new_id] = {"name":add_fname, "contact":add_contact, "orders":[]}
                 main_menu()
             else:
                 if add_option == 2:
@@ -67,7 +68,7 @@ def report_all():
         if report_choice.isdigit:
             report_choice = int(report_choice)
             if report_choice == 1:
-                for key,items in customers:
+                for key in customers:
                     print(f"ID:{key} Info:{items}")
             else:
                 if report_choice == 2:
@@ -109,4 +110,6 @@ def main_menu():
                                 print("Invalid entry. Please enter option as a number")
 
 
-main_menu()
+# This is how to print/access the list inside of the dictionary
+# Which is in another dictionary itself 
+# print(customers[1]["orders"])
