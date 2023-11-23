@@ -69,8 +69,7 @@ def report_all():
         if report_choice.isdigit:
             report_choice = int(report_choice)
             if report_choice == 1:
-                for key,items in customers:
-                    print(f"ID:{key} Info:{items}")
+                    print(customers)
             else:
                 if report_choice == 2:
                     print("Exiting to main menu")
