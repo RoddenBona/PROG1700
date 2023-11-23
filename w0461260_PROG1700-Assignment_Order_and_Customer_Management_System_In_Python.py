@@ -172,3 +172,6 @@ while True:
 # This is how to print/access the list inside of the dictionary
 # Which is in another dictionary itself 
 # print(customers[1]["orders"])
+
+#Current goal
+#get report one working with total spending included
