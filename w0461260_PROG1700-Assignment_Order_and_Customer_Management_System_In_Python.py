@@ -58,7 +58,9 @@ def report_one(customerID):
                     print("Exiting to main menu")
                     main_menu()
                 else:
-                    print("Invalid entry. Please enter option as a number")
+                    print("Invalid entry. Option not in list")
+        else:
+            print("invalid entry please input a number")
 
 def report_all():
     while True:
@@ -75,7 +77,9 @@ def report_all():
                     print("Exiting to main menu")
                     main_menu()
                 else:
-                    print("invalid entry. Please enter option as a number")
+                    print("invalid entry. Option not in list")
+        else:
+            print("Invalid entry. Please enter a number")
 
 def main_menu():
     while True:
@@ -107,7 +111,9 @@ def main_menu():
                                 print("Exiting program. Thank you for your time")
                                 break
                             else:
-                                print("Invalid entry. Please enter option as a number")
+                                print("Invalid entry. Option not in list")
+        else:
+            print("Invalid entry. Please enter a number")
 
 main_menu()
 
