@@ -29,6 +29,7 @@ def customer_addition():
                 add_contact = input("Enter new cusomter contact number: ")
                 new_id = number_of_entries + 1
                 customers[new_id] = {"name":add_fname, "contact":add_contact, "orders":[]}
+                print("New entry has been added")
                 main_menu()
             else:
                 if add_option == 2:
