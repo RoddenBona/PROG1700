@@ -69,7 +69,7 @@ def report_all():
         if report_choice.isdigit:
             report_choice = int(report_choice)
             if report_choice == 1:
-                for key in customers:
+                for key,items in customers:
                     print(f"ID:{key} Info:{items}")
             else:
                 if report_choice == 2:
@@ -110,6 +110,7 @@ def main_menu():
                             else:
                                 print("Invalid entry. Please enter option as a number")
 
+main_menu()
 
 # This is how to print/access the list inside of the dictionary
 # Which is in another dictionary itself 
