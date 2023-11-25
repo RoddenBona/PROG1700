@@ -51,7 +51,7 @@ def order_placement(customerID, product_name, quantity, unit_price):
             order_choice = int(order_choice)
             if order_choice == 1:
                 new_id = number_of_orders + 1
-                new_order = {"OrderID":new_id, "Product":product_name, "Quantity":quantity, "Price":unit_price}
+                new_order = {"OrderID":new_id, "product":product_name, "quantity":quantity, "price":unit_price}
                 customers[customerID]["orders"].append(new_order)
                 print("Order has been added")
                 break
@@ -65,10 +65,19 @@ def order_placement(customerID, product_name, quantity, unit_price):
             print("Invalid entry. Please enter a number")
 
 def report_one(customerID):
-    test = customers[customerID]["orders"]["quantity"].values
-    print(test)
+
     customer = customers[customerID]["orders"]
     name = customers[customerID]["name"]
+    x = 0
+    total = 0
+    for items in (customers[customerID]["orders"]):
+        quant = int(customers[customerID]["orders"][x]["quantity"])
+        price = int(customers[customerID]["orders"][x]["price"])
+        current = (quant * price)
+        total = total + current
+        x = x + 1
+
+
 
 
     while True:
@@ -82,6 +91,8 @@ def report_one(customerID):
                 print(f"Customer report for {name}")
                 for order in customer:
                     print(order)
+                print(f"Total spending is: {total}")
+                break
             else:
                 if report_option == 2:
                     print("Exiting to main menu")
@@ -125,7 +136,7 @@ while True:
             customer_addition()
         else:
             if menu_choice == 2:
-                customer_search = input("Enter CustomerID: ")
+                customer_search = input("Enter Customer ID: ")
                 if customer_search.isdigit:
                     customer_search = int(customer_search)
                     if customer_search in customers:
@@ -148,7 +159,7 @@ while True:
                     print("Invalid entry")
             else:
                 if menu_choice == 3:
-                    customer_search = input("Enter CustomerID")
+                    customer_search = input("Enter Customer ID")
                     if customer_search.isdigit():
                         customer_search = int(customer_search)
                     if customer_search in customers:
