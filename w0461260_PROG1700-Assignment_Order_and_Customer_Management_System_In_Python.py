@@ -145,7 +145,7 @@ while True:
                         quantity = input("Enter quantity of product: ")
                         if quantity.isdigit():
                             quantity = int(quantity)
-                            unit_price = input("Enter price of the product (No decimals): ")
+                            unit_price = input("Enter price of the product in whole ollars: ")
                             if unit_price.isdigit():
                                 unit_price = int(unit_price)
                                 order_placement(customerID,product_name,quantity,unit_price)
