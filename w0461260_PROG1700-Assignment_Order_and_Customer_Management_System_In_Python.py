@@ -65,8 +65,10 @@ def order_placement(customerID, product_name, quantity, unit_price):
             print("Invalid entry. Please enter a number")
 
 def report_one(customerID):
-    total_spending = 0
-    customer = customers.get(customerID)
+    test = customers[customerID]["orders"]["quantity"].values
+    print(test)
+    customer = customers[customerID]["orders"]
+    name = customers[customerID]["name"]
 
 
     while True:
@@ -77,14 +79,9 @@ def report_one(customerID):
         if report_option.isdigit():
             report_option = int(report_option)
             if report_option == 1:
-                if customer:
-                    for order in customer("orders"):
-                        total_spending += order["Price"]
-                    print(f"Total Spending: ${total_spending}")
-                    print("Orders:")
-                    for order in dict(customer["orders"]):
-                        print(f"{order}")
-                break
+                print(f"Customer report for {name}")
+                for order in customer:
+                    print(order)
             else:
                 if report_option == 2:
                     print("Exiting to main menu")
