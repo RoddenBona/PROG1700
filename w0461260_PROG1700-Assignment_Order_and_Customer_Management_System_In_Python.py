@@ -77,9 +77,6 @@ def report_one(customerID):
         total = total + current
         x = x + 1
 
-
-
-
     while True:
         report_option = input("""Do you wish to generate a report of the selected customer?
                               1)Yes
@@ -91,7 +88,7 @@ def report_one(customerID):
                 print(f"Customer report for {name}")
                 for order in customer:
                     print(order)
-                print(f"Total spending is: {total}")
+                print(f"Total spending for this customer is: {total}")
                 break
             else:
                 if report_option == 2:
