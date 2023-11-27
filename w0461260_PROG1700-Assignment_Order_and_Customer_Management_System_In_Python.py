@@ -173,10 +173,3 @@ while True:
                             print("Invalid entry. Option not in list")
     else:
         print("Invalid entry. Please enter a number")
-
-# This is how to print/access the list inside of the dictionary
-# Which is in another dictionary itself 
-# print(customers[1]["orders"])
-
-#Current goal
-#get report one working with total spending included
