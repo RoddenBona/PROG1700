@@ -7,8 +7,9 @@ Module: Data Structures
 Approach: Procedural Programming with Functions
 Language: Python 3
 Created: Nov 22 2023
-Last edited Nov 22 2023
+Last edited Nov 27 2023
 """
+
 
 customers = {1: {"name": "Alice", "contact": "123-456-7890", "orders": []},
             2: {"name": "Bob", "contact": "987-654-3210", "orders": []},
