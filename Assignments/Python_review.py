@@ -35,12 +35,13 @@ for i in range(1,11,1):
 print(results)
 
 #Write a function to calculate the factorial of a number using a while loop.
-n = 5
-result = 1
-while n > 0:
-    result *= n
-    print(result)
-    n = n - 1
+def factorial(n):
+    result = 2
+    while n > 0:
+        result *= n
+        n = n - 1
+    return result
+print(factorial(4))
 
 #Create two sets, set1 and set2, and find and print their intersection.
 
