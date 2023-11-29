@@ -7,14 +7,18 @@ Module: Data Structures
 Approach: Procedural Programming with Functions
 Language: Python 3
 Created: Nov 22 2023
-Last edited Nov 27 2023
+Last edited Nov 29 2023
 """
 
+#Defining the main customer table as a variable
 customers = {1: {"name": "Alice", "contact": "123-456-7890", "orders": []},
             2: {"name": "Bob", "contact": "987-654-3210", "orders": []},
             }
 
+#The count of customers in the customers variable
+#Mainly used in adding a new customer and nothing else
 number_of_entries = len(customers)
+
 
 def customer_addition():
     while True:

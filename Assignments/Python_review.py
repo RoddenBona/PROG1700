@@ -29,8 +29,10 @@ form = "Sunday"
 print(f"Hello. My name is {name}. and today is {form}")
 
 #Using a for loop, print the numbers from 1 to 10.
-for i in range(1,11):
-    print(i)
+results = ""
+for i in range(1,11,1):
+    results += str(i) + " "
+print(results)
 
 #Write a function to calculate the factorial of a number using a while loop.
 n = 5
@@ -127,8 +129,18 @@ int_sum(68,12)
 #Reading/Writing External Files:
 #File Reading:
 #Read a text file named 'sample.txt' and print its contents line by line.
-
+t = open("sample.txt", "r")
+print(t.read())
 
 #File Writing:
 #Write a list of strings to a new text file named 'output.txt'.
 
+test = input("Enter something to add to an output text file: ")
+
+w = open("output.txt", "a")
+w.write(str(test))
+w.close()
+
+#Now to open it and read it again
+w = open("output.txt", "r")
+print(w.read())
