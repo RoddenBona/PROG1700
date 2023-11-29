@@ -16,7 +16,7 @@ Last Update: November 2023
 #Create two string variables, str1 and str2, and concatenate them into a third variable result_str.
 str1 = "forty "
 str2 = "bucks"
-str_con = str1 + str2
+str_con = str1 + " " + str2
 print(str_con)
 
 #Given a string sentence, extract and print the first five characters.
@@ -24,8 +24,9 @@ sub = "Hello world"
 print(sub[0:5])
 
 #Create a string that includes variables. Use string formatting to insert values into the string.
+name = "Rodden"
 form = "Sunday"
-(f"Hello. today is {form}")
+print(f"Hello. My name is {name}. and today is {form}")
 
 #Using a for loop, print the numbers from 1 to 10.
 for i in range(1,11):
@@ -126,6 +127,8 @@ int_sum(68,12)
 #Reading/Writing External Files:
 #File Reading:
 #Read a text file named 'sample.txt' and print its contents line by line.
+
+
 #File Writing:
 #Write a list of strings to a new text file named 'output.txt'.
 
