@@ -44,16 +44,29 @@ def factorial(n):
 print(factorial(4))
 
 #Create two sets, set1 and set2, and find and print their intersection.
-
 set1 = {1,2,3,4,5}
 set2 = {4,5,6,7,8}
 
 print(set1)
 print(set2)
 
-inter = set1.intersection(set2)
+#Here's the more manual way of finding the intersection
+for i1 in set1:
+    for i2 in set2:
+        if i1 == i2:
+            print(i1)
 
+#Here a version of it using & in the algorithim
+inter_set = set1 & set2
+print(inter_set)
+
+#This also works as well and of course, it's the most simplest way of it
+inter = set1.intersection(set2)
 print(inter)
+
+#and here's the dfference between the 2 sets
+diff = set1 - set2
+print(diff)
 
 #Create a list of numbers. Perform the following operations and print the result:
 #Average of all elements.
@@ -66,10 +79,18 @@ num_of = len(l)
 avg = sum_of/num_of
 print(avg)
 
+#or
+print(sum(l)/len(l))
+
 maxi = max(l)
 mini = min(l)
 print(maxi)
 print(mini)
+
+#or
+
+print(max(l))
+print(min(l))
 
 #Generate a list of squares of numbers from 1 to 10 using list comprehension.
 
