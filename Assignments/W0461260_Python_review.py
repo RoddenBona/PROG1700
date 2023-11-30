@@ -108,7 +108,9 @@ print(squares2)
 tup = ("Yugi", "Kaiba", "Marik")
 
 a, b, c = tup
-print(a,b,c)
+print(a)
+print(b)
+print(c)
 
 #Create a dictionary representing a person with keys like 'name', 'age', and 'city'. Print each key-value pair.
 dictionary = {"Name":"Rodden",
