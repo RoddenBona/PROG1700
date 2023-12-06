@@ -9,3 +9,15 @@ def greeting(name):
 
 #Now that the function is defined. We can import it into another one of our files
 #Check the second test_module file for that in use
+
+#You can also use this to store variables inside it aswell
+#Meaning you can just grab variables from outside the main python file you are currenlty working on
+
+person1 = {
+  "name": "John",
+  "age": 36,
+  "country": "Norway"
+}
+
+#If you wanted to just import one thing from a file use the following import string
+#       from mymodule import person1

@@ -8,3 +8,7 @@ test_module.greeting("Rodden")
 
 name = "Jonah"
 test_module.greeting(name)
+
+from test_module import person1
+
+print(person1["age"])
