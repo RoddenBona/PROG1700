@@ -21,10 +21,10 @@ while chkn > 0:
     #At the start of the loop increment the amount the days as it makes no sense to begin on day 0
     days = days + 1
     #Little message displaying what number day it is and how much chicken is left
-    print("On day " + str(days) + " There were " + str(chkn) + " pounds of chicken")
+    print(f"On day {days} There were {chkn:.2f} pounds of chicken")
     #On day 7. The Dino gets sick and doesn't eat anything
     if days == 7:
-        print("The dinosaur was sick on day " + str(days) + ". So he did not eat any chicken")
+        print(f"The dinosaur was sick on day {days}. So he did not eat any chicken")
 
 #If the Dino is not sick on day 7. This program will determine how much will be eaten each day
     else:
@@ -32,14 +32,15 @@ while chkn > 0:
         #The nearest hundreth decimal. Starting with 1 pound on day 1
         chkn = round(chkn - chkn_eat, 2)
         #Another little message howing how much the Dino ate each day
-        print("The Dinosaur ate " + str(chkn_eat) + " percent of the chicken")
+        print(f"The Dinosaur ate {chkn_eat:.2f} pounds of the chicken on that day")
         #Increase the amount of chicken that will be eaten on the next day by 0.05 times # of days
         # rounded to the nearest hundreth
-        chkn_eat = round(1 + (0.05*days), 2)
+        chkn_eat = (chkn_eat + 0.05)
         
 
 #If there is no more chicken left. Display below message, and end the program as the loop is no
 #longer active
 if chkn <= 0:
     chkn = 0
-    print("And now the chicken is all gone within " + str(days) + " days")
+    print(f"And now the chicken is all gone within {days} days")
+
