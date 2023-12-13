@@ -5,7 +5,7 @@ Course: PROG1700
 Respository: https://github.com/RoddenBona/PROG1700
 Project: Dinosaur Chicken Eating
 Programming language: Python 3
-Version 2.75
+Version ???
 Last Edited Dec.13.2023
 """
 
