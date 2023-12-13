@@ -13,13 +13,15 @@ Last Edited Dec.13.2023
 #Will start eating on the first day and
 chkn = 20
 days = 0
-chkn_eat = 1.00
+chkn_eat = 0
 
 #While the amount the chicken left is not 0. the program will continue to calculate how much
 #Will be eaten, and increment the passing days in a loop until there is no chicken left
 while chkn > 0:
     #At the start of the loop increment the amount the days as it makes no sense to begin on day 0
     days = days + 1
+    if days == 1:
+        chkn_eat = 1.00
     #Little message displaying what number day it is and how much chicken is left
     print(f"On day {days} There were {chkn:.2f} pounds of chicken")
     #On day 7. The Dino gets sick and doesn't eat anything
@@ -35,7 +37,7 @@ while chkn > 0:
         print(f"The Dinosaur ate {chkn_eat:.2f} pounds of the chicken on that day")
         #Increase the amount of chicken that will be eaten on the next day by 0.05 times # of days
         # rounded to the nearest hundreth
-        chkn_eat = (chkn_eat + 0.05)
+        chkn_eat = (chkn_eat + (chkn_eat * 0.05))
         
 
 #If there is no more chicken left. Display below message, and end the program as the loop is no
