@@ -40,4 +40,5 @@ while chkn > 0:
 #If there is no more chicken left. Display below message, and end the program as the loop is no
 #longer active
 if chkn <= 0:
+    chkn = 0
     print("And now the chicken is all gone within " + str(days) + " days")
