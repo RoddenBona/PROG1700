@@ -20,7 +20,7 @@ chkn_eat = 0
 while chkn > 0:
     #At the start of the loop increment the amount the days as it makes no sense to begin on day 0
     days = days + 1
-    if days == 1:
+    if days == 1: # On day 1 the dino starts with eating 1 pound of chicken
         chkn_eat = 1.00
     #Little message displaying what number day it is and how much chicken is left
     print(f"On day {days} There were {chkn:.2f} pounds of chicken")
@@ -32,7 +32,7 @@ while chkn > 0:
     else:
         #The chicken value will have it's value subtracted by the chicken eat value. Rounded to
         #The nearest hundreth decimal. Starting with 1 pound on day 1
-        chkn = round(chkn - chkn_eat, 2)
+        chkn = chkn - chkn_eat
         #Another little message howing how much the Dino ate each day
         print(f"The Dinosaur ate {chkn_eat:.2f} pounds of the chicken on that day")
         #Increase the amount of chicken that will be eaten on the next day by 0.05 times # of days
