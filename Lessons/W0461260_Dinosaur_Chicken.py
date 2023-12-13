@@ -6,6 +6,7 @@ Respository: https://github.com/RoddenBona/PROG1700
 Project: Dinosaur Chicken Eating
 Programming language: Python 3
 Version 2.75
+Last Edited Dec.13.2023
 """
 
 #Values set for amount of chicken left, number of days past, and how much chicken the dinosaur
