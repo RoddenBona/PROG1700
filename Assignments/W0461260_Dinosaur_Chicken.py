@@ -45,4 +45,3 @@ while chkn > 0:
 if chkn <= 0:
     chkn = 0
     print(f"And now the chicken is all gone within {days} days")
-
