@@ -42,7 +42,36 @@ car1.stop_engine()
 print(car2.is_running)
 
 
+
+
+
 #Inheritance:
+#Parent class
+class Animal:
+    def __init__(self, name, habitat):
+        self.name = name
+        self.habitat = habitat
+
+
+#child classes / sub-classes
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name}. Says woof"
+
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name} Says meow"
+    
+#using methods
+dog = Dog("Sampson","domestic")
+cat = Cat("Izzy", "domestic")
+
+print(dog.speak())
+print(cat.speak())
+
+print(dog.habitat)
+print(cat.habitat)
+
 
 
 #Polymorphism
