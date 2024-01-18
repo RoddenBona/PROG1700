@@ -8,7 +8,6 @@ class Animal:
     def speak(self):
         pass
 
-
 #Then at least 1-2 more classes for some animals
 class Dog(Animal):
     def speak(self):
@@ -30,6 +29,7 @@ print(cat.name)
 print(F"{dog.speak()} and {cat.speak()}")
 
 #The Dog and Cat classes ingierit the name properties of the general Animal class
+
 
 
 
