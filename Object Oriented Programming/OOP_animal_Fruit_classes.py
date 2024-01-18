@@ -29,9 +29,11 @@ print(dog.name)
 print(cat.name)
 print(F"{dog.speak()} and {cat.speak()}")
 
+#The Dog and Cat classes ingierit the name properties of the general Animal class
+
+
 
 #Polymorphism in python allows objects of different types to inhierit objects of a common type
-
 class Fruit:
     def __init__(self,name,):
         self.name = name
@@ -68,7 +70,7 @@ def describe_taste(Fruit):
 
 #make instances of Apples and Oranges
 apple = Apple("Honeydew", "Yellow")
-orange = Orange("Orange Orange", "Large")
+orange = Orange("Orange", "Large")
 
 #Demonstrate polymorphism by calling the describe taste function with different fruit objects
 describe_taste(apple)
