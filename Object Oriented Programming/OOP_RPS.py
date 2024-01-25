@@ -32,7 +32,7 @@ class CPU(Player):
     def choose_move(self):
         return random.choice(options_list)
     
-class RPSgame():
+class RPSgame:
     #Create the characters
     def __init__(self):
         self.player1 = HumanPlayer("Player1")
