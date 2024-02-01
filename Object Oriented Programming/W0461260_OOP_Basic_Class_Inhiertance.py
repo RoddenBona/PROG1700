@@ -66,4 +66,3 @@ print(f"Square Volume: {volume_squared}")
 
 perimeter_squared = cube.calculate_perimeter()
 print(f"Square Perimeter: {perimeter_squared}")
-
