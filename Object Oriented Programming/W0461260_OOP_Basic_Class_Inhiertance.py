@@ -1,3 +1,5 @@
+#This file is just built off of the previous Basic class file. ust with Inhieritance in it
+
 #Creating a rectangle and define the attributes and methods of it to calculate it's area and perimeter
 
 #define the class. classes are templates for objects
@@ -40,3 +42,24 @@ print(f"Perimeter: {perimeter}")
 
 volume = rect.calculate_volume()
 print(f"Volume: {volume}")
+
+
+#Create a new class called Square which will inhierot te attributes of Retangle
+class Sqaure(Rectangle):
+    def __init__(self, side_length):
+        #Call the constructor of the base class (Rectangle)
+        #But instead we are inserting our own extra thing. Where we make the lengh,width, and heigth equal to the one side length variable.
+        super().__init__(length = side_length, width=side_length, heigth=side_length)
+
+#Make te instnce of the square class
+#But now we only need tp fill one variable as side_length will just fill in
+#the 3 measuremnt variables that it inhierited with itself.
+cube = Sqaure(side_length=3)
+
+#we can use the same methods we made for the original Rectangle class since we inhierited them
+area_squared = cube.calculate_area()
+print(f"Square Area: {area_squared}") 
+
+volume_squared = cube.calculate_volume()
+print(f"Square Volume: {volume_squared}")
+
