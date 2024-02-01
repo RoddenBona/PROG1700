@@ -30,6 +30,7 @@ rect = Rectangle(length = 6, width = 4, heigth= 5)
 #We use dot (.) notation to access singular attribures of an object
 print(f"Length: {rect.length}")
 print(f"Width: {rect.width}")
+print(f"Height: {rect.heigth}")
 
 #print(type(rect))
 
@@ -65,3 +66,4 @@ print(f"Square Volume: {volume_squared}")
 
 perimeter_squared = cube.calculate_perimeter()
 print(f"Square Perimeter: {perimeter_squared}")
+
